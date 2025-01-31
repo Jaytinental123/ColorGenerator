@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* letter-spacing: -1px; */
+}
+
+/* .body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+} */
+.all-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* row-gap: 1rem; */
+    padding: 1rem;
+    position: absolute;
+    /* top: 5%;
+    left: 5%; */
+    background-color: black;
+
+}
+
+.big-title{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #ddd; */
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+}
+
+h4{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.color-box-container{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    /* border: 1px solid #ddd;
+    border-radius: 1rem; */
+
+}
+
+.boxes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border-radius: 1rem;
+}
+
+.first-color-box{
+    width: 33%;
+    height: auto;
+    background-color: #ddd;
+    padding: 8rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 1rem 0 0 1rem;
+    border-right: 1px solid #ffffff;
+}
+
+.second-color-box{
+    width: 33%;
+    height: auto;
+    background-color: #ddd;
+    padding: 8rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid #ffffff;
+    
+}
+
+.third-color-box{
+    width: 33%;
+    height: auto;
+    background-color: #ddd;
+    padding: 8rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid #ffffff;
+    
+}
+
+.fourth-color-box{
+    width: 33%;
+    height: auto;
+    background-color: #ddd;
+    padding: 8rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid #ffffff;
+    
+}
+
+.fifth-color-box{
+    width: 33%;
+    height: auto;
+    background-color: #ddd;
+    padding: 8rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0 1rem 1rem 0;
+    
+}
+
+button{
+    width: fit-content;
+    height: auto;
+    background-color: white;
+    color: black;
+    padding: 1rem 3.5rem;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+font-weight: 500;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    .all-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        gap: none;
+    
+    }
+    
+    .big-title{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        margin: 0;
+    }
+    
+    h4{
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .color-box-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+        border-left: none !important;
+    
+    }
+    
+    .boxes{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        /* border-radius: 1rem; */
+        gap: none;
+    }
+    
+    .first-color-box{
+        width: 100%;
+        height: auto;
+        background-color: #ddd;
+        padding: 3rem 0;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: .5rem .5rem 0 0;
+        border-bottom: 1px solid #ffffff;
+        border-left: none !important;
+    }
+    
+    .second-color-box{
+        width: 100%;
+        height: auto;
+        background-color: #ddd;
+        padding: 3rem 0;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid #ffffff;
+        border-left: none !important;
+        
+    }
+    
+    .third-color-box{
+        width: 100%;
+        height: auto;
+        background-color: #ddd;
+        padding: 3rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid #ffffff;
+        border-left: none !important;
+        
+    }
+    
+    .fourth-color-box{
+        width: 100%;
+        height: auto;
+        background-color: #ddd;
+        padding: 3rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid #ffffff;
+        border-left: none !important;
+        
+    }
+    
+    .fifth-color-box{
+        width: 100%;
+        height: auto;
+        background-color: #ddd;
+        padding: 3rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 0 0 .5rem .5rem;
+        
+    }
+    
+    button{
+        width: fit-content;
+        height: auto;
+        background-color: white;
+        color: black;
+        padding: 1rem 3.5rem;
+        border-radius: .5rem;
+        outline: none;
+        cursor: pointer;
+        font-size: 1rem;
+    font-weight: 500;
+    }
+    
+    p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+    
+    }
+}
