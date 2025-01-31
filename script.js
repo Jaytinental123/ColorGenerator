@@ -5,6 +5,9 @@ let secondHex = document.getElementById(`second-hex`)
 let thirdHex = document.getElementById(`third-hex`)
 let fourthHex = document.getElementById(`fourth-hex`)
 let fifthHex = document.getElementById(`fifth-hex`)
+let reset = document.getElementById(`reset-btn`)
+let hamburger = document.getElementById(`hamburger`)
+let hiddenMenu = document.getElementById(`hidden-menu`)
 
 let firstColorBox = document.getElementById(`first-color-box`)
 let secondColorBox = document.getElementById(`second-color-box`)
@@ -23,7 +26,7 @@ console.log(genRandomNumber());
 
 
 button.addEventListener("click", function (event) {
-    event.preventDefault
+    event.preventDefault()
     let hexCodeOne = `#`
     let hexCodeTwo = `#`
     let hexCodeThree = `#`
@@ -66,3 +69,31 @@ button.addEventListener("click", function (event) {
     fifthColorBox.style.backgroundColor = hexCodeFive
     fifthHex.textContent = hexCodeFive
 })
+
+reset.addEventListener("click", function (event) {
+    event.preventDefault()
+    let defaultColor = `#DDDDDD`
+
+    firstColorBox.style.backgroundColor = defaultColor
+    firstHex.textContent = defaultColor
+
+    secondColorBox.style.backgroundColor = defaultColor
+    secondHex.textContent = defaultColor
+
+    thirdColorBox.style.backgroundColor = defaultColor
+    thirdHex.textContent = defaultColor
+
+    fourthColorBox.style.backgroundColor = defaultColor
+    fourthHex.textContent = defaultColor
+
+    fifthColorBox.style.backgroundColor = defaultColor
+    fifthHex.textContent = defaultColor
+})
+
+
+
+
+hamburger.addEventListener('click', () => {
+    console.log("Hamburger clicked!");
+    hiddenMenu.classList.toggle('show-menu');  
+});
