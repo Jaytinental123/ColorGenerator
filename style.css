@@ -98,7 +98,7 @@ button {
     height: auto;
     background-color: #5DB133;
     color: white;
-    padding: 1rem 3.5rem;
+    padding: 1rem 2.5rem;
     border-radius: .5rem;
     outline: none;
     border: none;
@@ -119,9 +119,16 @@ button {
     border-radius: .5rem;
     border: 2px solid #5DB133;
     cursor: pointer;
+    
+}
+
+.reset-btn h5 {
     font-size: 1.2rem;
     font-weight: 500;
-    cursor: pointer;
+}
+.cta h5{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 h4 {
@@ -220,7 +227,7 @@ h6:hover {
     padding: 5rem;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     border-radius: 1rem 0 0 1rem;
     border-right: 1px solid #ffffff;
     display: flex;
@@ -236,7 +243,7 @@ h6:hover {
     padding: 5rem;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     border-right: 1px solid #ffffff;
     display: flex;
     justify-content: center;
@@ -252,7 +259,7 @@ h6:hover {
     padding: 5rem;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     border-right: 1px solid #ffffff;
     display: flex;
     justify-content: center;
@@ -268,7 +275,7 @@ h6:hover {
     padding: 5rem;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     border-right: 1px solid #ffffff;
     display: flex;
     justify-content: center;
@@ -284,7 +291,7 @@ h6:hover {
     padding: 5rem;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     border-radius: 0 1rem 1rem 0;
     display: flex;
     justify-content: center;
@@ -297,10 +304,11 @@ h6:hover {
 
 p {
     font-size: 1.1rem;
-    font-weight: 500;
-    position: absolute;
+    font-weight: 520;
+    /* color: white; */
+    /* position: absolute;
     top: 50%;
-    left: 35%;
+    left: 35%; */
 
 }
 
@@ -309,7 +317,7 @@ p {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
     .all-container {
         width: 100%;

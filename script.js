@@ -56,18 +56,23 @@ button.addEventListener("click", function (event) {
 
     firstColorBox.style.backgroundColor = hexCodeOne
     firstHex.textContent = hexCodeOne
+    firstHex.style.color = getContrastColor(hexCodeOne);
 
     secondColorBox.style.backgroundColor = hexCodeTwo
     secondHex.textContent = hexCodeTwo
+    secondHex.style.color = getContrastColor(hexCodeTwo);
 
     thirdColorBox.style.backgroundColor = hexCodeThree
     thirdHex.textContent = hexCodeThree
+    thirdHex.style.color = getContrastColor(hexCodeThree);
 
     fourthColorBox.style.backgroundColor = hexCodeFour
     fourthHex.textContent = hexCodeFour
+    fourthHex.style.color = getContrastColor(hexCodeFour);
 
     fifthColorBox.style.backgroundColor = hexCodeFive
     fifthHex.textContent = hexCodeFive
+    fifthHex.style.color = getContrastColor(hexCodeFive);
 })
 
 reset.addEventListener("click", function (event) {
@@ -97,3 +102,18 @@ hamburger.addEventListener('click', () => {
     console.log("Hamburger clicked!");
     hiddenMenu.classList.toggle('show-menu');  
 });
+
+
+function getContrastColor(hexColor) {
+    let r = parseInt(hexColor.substring(1, 3), 16); 
+    let g = parseInt(hexColor.substring(3, 5), 16);
+    let b = parseInt(hexColor.substring(5, 7), 16);
+
+    let brightness = (r * 0.299) + (g * 0.587) + (b * 0.114); 
+
+    if (brightness > 128) {
+        return "#000000";  
+    } else {
+        return "#FFFFFF"; 
+    }
+}
